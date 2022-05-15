@@ -1,5 +1,6 @@
 var preview = document.querySelector(".popup-productos");
 var previewBox = preview.querySelectorAll(".preview");
+var productCon = document.querySelector("productos-container");
 
 document.querySelectorAll(".productos-container .btn-editar").forEach(boton => {
     boton.onclick = () => {
@@ -14,9 +15,3 @@ document.querySelectorAll(".productos-container .btn-editar").forEach(boton => {
     };
 });
 
-previewBox.forEach(close => {
-    close.querySelector(".btn-rojo").onclick = () => {
-        close.classList.remove("activo");
-        preview.style.display = "none";
-    };
-});
