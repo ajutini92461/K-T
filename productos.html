@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link href="./assets/css/style.css?1.0" rel="stylesheet" />
+    <title>K&T</title>
+    <link rel="icon" sizes="180x180" href="./assets/images/favicon.svg" />
+</head>
+
+<body id="productos">
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark p-3 fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/favicon.svg" alt="" width="40" height="40"
+                        class="d-inline-block mb-1 align-text-center mr-4 favicon" />
+                    K&T
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                    <div class="">
+                        <a class="btn boton-header btn-light boton" href="./index.html" role="button">Home</a>
+                        <a class="btn boton-header btn-light boton" href="productos.html" role="button">Productos</a>
+                        <a class="btn boton-header btn-light boton" href="inicio-sesion.html" role="button">Iniciar Sesión</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container" id="poductos-popup">
+            <div>
+                <h1>Productos</h1>
+            </div>
+            <div class="productos-container my-5" id="productos-container">
+                <div class="card">
+                    <img class="mx-auto" src="../K-T/assets/images/tetiana-shyshkina-trv87p_LMUw-unsplash.jpg" alt="">
+                    <p class="my-5">Título Producto</p>
+                    <p class="mx-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste illum ducimus
+                        consectetur ipsam iusto et, dignissimos impedit sapiente numquam saepe reiciendis cum doloribus
+                        modi. Distinctio culpa ipsam nostrum earum doloremque!</p>
+                    <div>
+                        <a href="#" class="btn boton-productos mb-3" data-name="p-1">Ver más</a>
+                    </div>
+                </div>
+                <div class="card mt-sm-0 mt-5">
+                    <img class="mx-auto" src="../K-T/assets/images/joanna-kosinska-mVdzV_HTyH4-unsplash.jpg" alt="">
+                    <p class="my-5">Título Producto</p>
+                    <p class="mx-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste illum ducimus
+                        consectetur ipsam iusto et, dignissimos impedit sapiente numquam saepe reiciendis cum doloribus
+                        modi. Distinctio culpa ipsam nostrum earum doloremque!</p>
+                    <div>
+                        <a href="#" class="btn boton-productos mb-3" data-name="p-2">Ver más</a>
+                    </div>
+                </div>
+                <div class="card mt-sm-0 mt-5" data-name="p-3">
+                    <img class="mx-auto" src="../K-T/assets/images/siora-photography-l3fh8RDxCvA-unsplash.jpg" alt="">
+                    <p class="my-5">Título Producto</p>
+                    <p class="mx-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste illum ducimus
+                        consectetur ipsam iusto et, dignissimos impedit sapiente numquam saepe reiciendis cum doloribus
+                        modi. Distinctio culpa ipsam nostrum earum doloremque!</p>
+                    <div>
+                        <a href="#" class="btn boton-productos mb-3"  data-name="p-3">Ver más</a>
+                    </div>
+                </div>
+        </section>
+        <section class="popup-productos">
+            <div class="preview" data-target="p-1">
+                <div>
+                    <h2 class="mb-3">Título Producto</h2>
+                </div>
+                <div class="popup-cuerpo">
+                    <img class="mx-auto fotoP" src="../K-T/assets/images/tetiana-shyshkina-trv87p_LMUw-unsplash.jpg" alt="">
+                    <p>Marca</p>
+                    <div class="mt-3">
+                        <h3>Información</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque facere saepe nobis
+                            perspiciatis laboriosam dolore optio quod, repellendus maiores consectetur numquam. Maxime
+                            necessitatibus ipsa veniam sapiente eveniet nisi sunt ut!</p>
+                    </div>
+                    <div class="mt-3">
+                        <h3>Características</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque facere saepe nobis
+                            perspiciatis laboriosam dolore optio quod, repellendus maiores consectetur numquam. Maxime
+                            necessitatibus ipsa veniam sapiente eveniet nisi sunt ut!</p>
+                    </div>
+                    <div class="mt-3">
+                        <h3>Precio</h3>
+                        <p>$xxx.xxx</p>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <button class="btn btn-rojo">Close</button>
+                </div>
+            </div>
+            <div class="preview" data-target="p-2">
+                <div>
+                    <h2 class="mb-3">Título Producto</h2>
+                    <img src="../primeraweb/imagenes/close.svg" class="close" alt="">
+                </div>
+                <div class="popup-cuerpo">
+                    <img class="mx-auto fotoP" src="../K-T/assets/images/joanna-kosinska-mVdzV_HTyH4-unsplash.jpg" alt="">
+                    <p>Marca</p>
+                    <div class="mt-3">
+                        <h3>Información</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque facere saepe nobis
+                            perspiciatis laboriosam dolore optio quod, repellendus maiores consectetur numquam. Maxime
+                            necessitatibus ipsa veniam sapiente eveniet nisi sunt ut!</p>
+                    </div>
+                    <div class="mt-3">
+                        <h3>Características</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque facere saepe nobis
+                            perspiciatis laboriosam dolore optio quod, repellendus maiores consectetur numquam. Maxime
+                            necessitatibus ipsa veniam sapiente eveniet nisi sunt ut!</p>
+                    </div>
+                    <div class="mt-3">
+                        <h3>Precio</h3>
+                        <p>$xxx.xxx</p>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <button class="btn btn-rojo">Close</button>
+                </div>
+            </div>
+            <div class="preview" data-target="p-3">
+                <div>
+                    <h2 class="mb-3">Título Producto</h2>
+                    <img src="../primeraweb/imagenes/close.svg" class="close" alt="">
+                </div>
+                <div class="popup-cuerpo pe-2">
+                    <img class="mx-auto fotoP" src="../K-T/assets/images/siora-photography-l3fh8RDxCvA-unsplash.jpg" alt="">
+                    <p>Marca</p>
+                    <div class="mt-3">
+                        <h3>Información</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque facere saepe nobis
+                            perspiciatis laboriosam dolore optio quod, repellendus maiores consectetur numquam. Maxime
+                            necessitatibus ipsa veniam sapiente eveniet nisi sunt ut!</p>
+                    </div>
+                    <div class="mt-3">
+                        <h3>Características</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque facere saepe nobis
+                            perspiciatis laboriosam dolore optio quod, repellendus maiores consectetur numquam. Maxime
+                            necessitatibus ipsa veniam sapiente eveniet nisi sunt ut!</p>
+                    </div>
+                    <div class="mt-3">
+                        <h3>Precio</h3>
+                        <p>$xxx.xxx</p>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <button class="btn btn-rojo">Close</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="footer-container">
+        <footer class="footer">
+            Copyright© 2022 K&T. Todos los derechos reservados.
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
