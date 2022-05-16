@@ -1,6 +1,6 @@
 var preview = document.querySelector(".popup-productos");
 var previewBox = preview.querySelectorAll(".preview");
-var productCon = document.querySelector("productos-container");
+
 
 document.querySelectorAll(".productos-container .btn-editar").forEach(boton => {
     boton.onclick = () => {
